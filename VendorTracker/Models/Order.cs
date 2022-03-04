@@ -4,9 +4,9 @@ namespace VendorTracker.Models
 {
   public class Order
   {
-    public string Title { get; set; }
-    public string Description { get; set; }
-    public double Price { get; set; }
+    public string Title { get;  }
+    public string Description { get;  }
+    public double Price { get;  }
     public int Id { get; }
     private static List<Order> _instances = new List<Order> { };
 
@@ -16,7 +16,7 @@ namespace VendorTracker.Models
      Description = description;
      Price = price;
       _instances.Add(this);
-      Id = _instances.Count;
+      // Id = _instances.Count;
     }
 
   }

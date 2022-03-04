@@ -47,5 +47,17 @@ namespace VendorTracker.Tests
       double result = newOrder.Price;
       Assert.AreEqual(price, result);
     }
+    [TestMethod]
+    public void SetTitle_SetTitle_String()
+    {
+      string title = "Blue Monday Order"; 
+      string description = "Some Things";
+      double price = 3.99;
+      Order newOrder = new Order(title, description, price);
+      string updatedTitle = "Happy Mondays";
+      newOrder.Title = updatedTitle;
+      string result = newOrder.Title;
+      Assert.AreEqual(updatedTitle, result);
+    }
   }
 }
