@@ -1,4 +1,11 @@
 @{
   Layout = "_Layout";
 }
-<h1>Hey is this working?</h1>
+<h1>Welcome to Pierre's Bakery</h1>
+<ul>
+      <li>@Model.Title</li>
+      <li>@Model.Description</li>
+      <li>$@Model.Price</li>
+  </ul>
+
+<a href="orders/new">New Order</a>
