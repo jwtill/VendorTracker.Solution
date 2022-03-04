@@ -27,7 +27,7 @@ namespace VendorTracker.Tests
     {
       string description = "A smelly place";
       Vendor newVendor = new Vendor("Amazing Larry", description);
-      string result = newVendor.Name;
+      string result = newVendor.Description;
       Assert.AreEqual(description, result);
     }
   }
