@@ -37,5 +37,15 @@ namespace VendorTracker.Tests
       string result = newOrder.Description;
       Assert.AreEqual(description, result);
     }
+    [TestMethod]
+    public void GetPrice_ReturnsPrice_Price()
+    {
+      string title = "Blue Monday Order"; 
+      string description = "Some Things";
+      double price = 3.99;
+      Order newOrder = new Order(title, description, price);
+      double result = newOrder.Price;
+      Assert.AreEqual(price, result);
+    }
   }
 }
