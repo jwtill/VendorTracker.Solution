@@ -27,7 +27,7 @@ namespace VendorTracker
     {
       app.UseDeveloperExceptionPage();
       app.UseRouting();
-
+      app.UseStaticFiles();
       app.UseEndpoints(routes =>
       {
         routes.MapControllerRoute("default", "{controller=Home}/{action=Index}/{id?}");
@@ -35,7 +35,7 @@ namespace VendorTracker
 
       app.Run(async (context) =>
       {
-        await context.Response.WriteAsync("Nothing on this page!");
+        await context.Response.WriteAsync("How does it feel?");
       });
     }
   }
