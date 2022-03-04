@@ -14,6 +14,7 @@ namespace VendorTracker.Models
     {
       Title = title;
      Description = description;
+     Price = price;
       _instances.Add(this);
       Id = _instances.Count;
     }
