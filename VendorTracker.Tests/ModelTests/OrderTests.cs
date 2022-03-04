@@ -24,7 +24,7 @@ namespace VendorTracker.Tests
       string description = "Some Things";
       double price = 3.99;
       Order newOrder = new Order(title, description, price);
-      string result = newOrder.Description;
+      string result = newOrder.Title;
       Assert.AreEqual(title, result);
     }
   }
