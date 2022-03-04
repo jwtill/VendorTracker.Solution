@@ -3,11 +3,15 @@ using VendorTracker.Models;
 using System.Collections.Generic;
 using System;
 
-namespace VendorTracker.Tests
+namespace VendorTracker.Tests 
 {
   [TestClass]
-  public class VendorTests
+  public class VendorTests : IDisposable
   {
+    public void Dispose()
+    {
+      TestCategoryAttribute.ClearAll();
+    }
     [TestMethod]
     public void VendorConstructor_CreatesInstanceOfVendor_Vendor()
     {
