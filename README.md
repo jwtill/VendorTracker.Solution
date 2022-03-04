@@ -1,45 +1,30 @@
-Update all this stuff
-<h1 align="center">The Price is Right!</h1>
+<h1 align="center">Vendor Tracker</h1>
 
-Matthew Eilar | [LinkedIn](https://www.linkedin.com/in/eilar-503/) | [email](mailto:<meilar@gmail.com>) | [website](https://www.mattheweilar.com)   
-
-Kevin Williams | [LinkedIn](https://linkedin.com/in/k9w) | [Twitter](https://twitter.com/k9w)
-
-Liam Eller | [LinkedIn](https://www.linkedin.com/in/liamellerportland/) | [email](mailto:<liamthelastson@gmail.com>) | [website](https://lionturtle99.github.io/my-portfolio/)
 
 Josh Tillinghast | [LinkedIn](https://www.linkedin.com/in/jwtill/) | [email](mailto:<jwtill@icloud.com>) 
 
-Mikah Mathews | [LinkedIn](https://www.linkedin.com/in/mikah-mathews/) | [email](mailto:<mikah@outofband.org>) 
-
 
 ## About this project
-{SCREENSHOT}
-
-This is an Epicodus team week project.
-
+An MVC application that tracks vendors orders for Pierre's Bakery
 ## Get Started
+### Download and populate project
+- Ensure that you have installed the latest versions of Git ([instructions](https://github.com/git-guides/install-git)) 
+- In your command line, clone this repository using `$ git clone https://github.com/jwtill/VendorTracker.Solution.git`
+- Navigate to the VendorTracker.Tests, run `dotnet restore` to add the neccesary files for testing 
+- Use the command `$ dotnet build` in the `VendorTracker` folder to build the project, then `dotnet run` to start the application.
+- To run tests, navigate to the VendorTracker.Tests folder and use the command `$ dotnet test` 
 
-### The Hard Way
-- Ensure that you have installed the latest versions of Git ([instructions](https://github.com/git-guides/install-git)) and Node.js ([instructions](https://nodejs.org/en/download/))
-- In your command line, clone this repository using `$ git clone https://github.com/meilar/{CHANGE_ME}`
-- Navigate to the project directory, then install the reqired project dependencies with `$ npm init` followed by `$ npm install` 
-- To run test suites, use the command `$ npm run test` 
-- To build and view the project in your default browser, use the command `$ npm run start` to deploy a webpack development server. Please note that Google Chrome may be required to use all features. 
-
-### The Easy Way
-
-[View the hosted version of this page on Github Pages.](https://meilar.github.io/{CHANGE_ME})
 
 ## Technologies Used
 
 This site incorporates the following frameworks and languages:
 
-- HTML 5
-- CSS 3
-- jQuery 3.6.0
-- Bootstrap 4.5
-- Node Package Manager/Node.js
-- A full list of libraries and dependencies can be viewed on this project's `package.json` configuration file
+- C #
+- .NET
+- MS testing
+- MVC(Model View Controller) design
+- HTML
+- CSS
 
 The following development tools were used to develop this page:
 
@@ -49,16 +34,17 @@ The following development tools were used to develop this page:
 
 
 ## Known Issues
+None at this time
 
 ## Acknowledgements
 
-Thank you to my partner, Alex, for support in all ways. Thank you to my parents for encouraging technology exploration, even when resources were scarce. Thank you to the Kohlenberg Foundation for {CHANGE ME}.
+Thanks to all my pairs this week for helping me understand the material in different ways, and to my family for support throughout the program
 
 ## License 
 
 MIT License
 
-© 2022 Matthew Eilar
+© 2022 Josh Tillinghast
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
