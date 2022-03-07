@@ -1,22 +1,17 @@
-<h1>new.cshtml in orders views</h1>
 @{
   Layout = "_Layout";
 }
-<div id="header">
-  <h1>Add a new order to @Model.Name</h1>
+<div class="container">
+  <div class="form-group">
+    <form action="/vendors/@Model.Id/orders" method="post">
+      <input id="vendorId" name="vendorId" type="hidden" class="form-control" value="@Model.Id">
+      <label for="orderTitle">Order Title</label>
+      <input id="orderTitle" name="orderTitle" type="text" class="form-control">
+      <label for="orderDescription">Order Description</label>
+      <input id="orderDescription" name="orderDescription" type="text" class="form-control">
+      <label for="orderPrice">Order Price</label>
+      <input id="orderPrice" name="orderPrice" type="text" class="form-control">
+      <button type='submit'>Add Order</button>
+    </form>
+  </div>
 </div>
-
-<form action="/vendors/@Model.Id/orders" method="post">
-  <input id="vendorId" name="vendorId" type="hidden" value="@Model.Id">
-
-  <label for="orderTitle">Order Title</label>
-  <input id="orderTitle" name="orderTitle" type="text">
-
-  <label for="orderDescription">Order Description</label>
-  <input id="orderDescription" name="orderDescription" type="text">
-
-  <label for="orderPrice">Order Price</label>
-  <input id="orderPrice" name="orderPrice" type="text">
-
-  <button type='submit'>Add Order</button>
-</form>

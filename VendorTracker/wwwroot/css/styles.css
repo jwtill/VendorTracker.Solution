@@ -6,19 +6,54 @@ body {
 #header {
   text-align:center;
   background-color: white;
-  width: 25%;
+  width: 100%;
   margin: auto;
-  margin-top: 2%;
   padding: 1%;
-  border-radius: 10px;
+  border-bottom:1px solid black;
+  opacity: .8;
+}
+#header a {
+  text-decoration: none;
+}
+#footer {
+  position:fixed;
+  bottom: 0px;
+  text-align:center;
+  background-color: white;
+  width: 100%;
+  margin: auto;
+  padding: 1%;
+  border-top:1px solid black;
   opacity: .8;
 }
 form {
-  margin: 10px;
+  width: 25%;
   padding: 10px;
+  border-radius: 5px;
+  padding: 20px;
+  margin: auto;
+  background-color: white;
+  border-bottom:1px solid black;
+  margin-top: 10%;
+}
+button {
+  margin-top:10px;
 }
 .list-group {
   width: 25%;
   margin: 2%;
+  border-radius: 5px;
+  padding: 10px;
+  margin: auto;
+  background-color: white;
+  border-bottom:1px solid black;
+  margin-top: 10%;
+
+}
+.card {
+  border-bottom:1px solid black;
+  width: 25%;
+  margin: auto;
+  margin-top: 10%;
 }
  

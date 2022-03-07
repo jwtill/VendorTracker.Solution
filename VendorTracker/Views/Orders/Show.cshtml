@@ -1,12 +1,13 @@
 @{
   Layout = "_Layout";
 }
-<div id="header">
-  <h1>Vendor Tracker Order Details: </h1>
+
+<div class="container">
+  <div class="card">
+    <div class="card-body">
+      <h2>@Model["order"].Title</h2>
+      <h3>Vendor: @Model["vendor"].Name</h3>
+      <a href='/vendors/@Model["vendor"].Id/order/new'>Add another item</a>
+    </div>
+  </div>
 </div>
-
-    <h2>@Model["order"].Title</h2>
-    <h3>Vendor: @Model["vendor"].Name</h3>
-
-    <a href='/vendors/@Model["vendor"].Id/order/new'>Add another item</a>
-    <a href='/vendors'>View all vendors</a>
