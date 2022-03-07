@@ -8,7 +8,8 @@ namespace VendorTracker.Tests
   [TestClass]
   public class OrderTests : IDisposable
   {
-    public void Dispose() {
+    public void Dispose()
+    {
       Order.ClearAll();
     }
     [TestMethod]
@@ -20,7 +21,7 @@ namespace VendorTracker.Tests
     [TestMethod]
     public void GetTitle_ReturnsTitle_String()
     {
-      string title = "Blue Monday Order"; 
+      string title = "Blue Monday Order";
       string description = "Some Things";
       double price = 3.99;
       Order newOrder = new Order(title, description, price);
@@ -30,7 +31,7 @@ namespace VendorTracker.Tests
     [TestMethod]
     public void GetDescription_ReturnsDescription_String()
     {
-      string title = "Blue Monday Order"; 
+      string title = "Blue Monday Order";
       string description = "Some Things";
       double price = 3.99;
       Order newOrder = new Order(title, description, price);
@@ -40,7 +41,7 @@ namespace VendorTracker.Tests
     [TestMethod]
     public void GetPrice_ReturnsPrice_Price()
     {
-      string title = "Blue Monday Order"; 
+      string title = "Blue Monday Order";
       string description = "Some Things";
       double price = 3.99;
       Order newOrder = new Order(title, description, price);
@@ -50,7 +51,7 @@ namespace VendorTracker.Tests
     [TestMethod]
     public void SetTitle_SetTitle_String()
     {
-      string title = "Blue Monday Order"; 
+      string title = "Blue Monday Order";
       string description = "Some Things";
       double price = 3.99;
       Order newOrder = new Order(title, description, price);
@@ -62,7 +63,7 @@ namespace VendorTracker.Tests
     [TestMethod]
     public void SetDescription_SetDescription_String()
     {
-      string title = "Blue Monday Order"; 
+      string title = "Blue Monday Order";
       string description = "Some Things";
       double price = 3.99;
       Order newOrder = new Order(title, description, price);
@@ -74,7 +75,7 @@ namespace VendorTracker.Tests
     [TestMethod]
     public void SetPrice_SetPrice_Double()
     {
-      string title = "Blue Monday Order"; 
+      string title = "Blue Monday Order";
       string description = "Some Things";
       double price = 3.99;
       Order newOrder = new Order(title, description, price);
@@ -93,10 +94,10 @@ namespace VendorTracker.Tests
     [TestMethod]
     public void GetAll_ReturnsOrders_OrderList()
     {
-      string title1 = "The Sundays"; 
+      string title1 = "The Sundays";
       string description1 = "Some Things";
       double price1 = 3.99;
-      string title2 = "Friday I'm in Love"; 
+      string title2 = "Friday I'm in Love";
       string description2 = "Some Other Things";
       double price2 = 5.99;
       Order newOrder1 = new Order(title1, description1, price1);
